@@ -1,0 +1,160 @@
+#pragma once
+
+#define ICM42605_DEVICE_CONFIG        0x11UL
+#define ICM42605_DRIVE_CONFIG         0x13UL
+#define ICM42605_INT_CONFIG           0x14UL
+#define ICM42605_FIFO_CONFIG          0x16UL
+#define ICM42605_TEMP_DATA1           0x1DUL
+#define ICM42605_TEMP_DATA0           0x1EUL
+#define ICM42605_ACCEL_DATA_X1        0x1FUL
+#define ICM42605_ACCEL_DATA_X0        0x20UL
+#define ICM42605_ACCEL_DATA_Y1        0x21UL
+#define ICM42605_ACCEL_DATA_Y0        0x22UL
+#define ICM42605_ACCEL_DATA_Z1        0x23UL
+#define ICM42605_ACCEL_DATA_Z0        0x24UL
+#define ICM42605_GYRO_DATA_X1         0x25UL
+#define ICM42605_GYRO_DATA_X0         0x26UL
+#define ICM42605_GYRO_DATA_Y1         0x27UL
+#define ICM42605_GYRO_DATA_Y0         0x28UL
+#define ICM42605_GYRO_DATA_Z1         0x29UL
+#define ICM42605_GYRO_DATA_Z0         0x2AUL
+#define ICM42605_TMST_FSYNCH          0x2BUL
+#define ICM42605_TMST_FSYNCL          0x2CUL
+#define ICM42605_INT_STATUS           0x2DUL
+#define ICM42605_FIFO_COUNTH          0x2EUL
+#define ICM42605_FIFO_COUNTL          0x2FUL
+#define ICM42605_FIFO_DATA            0x30UL
+#define ICM42605_APEX_DATA0           0x31UL
+#define ICM42605_APEX_DATA1           0x32UL
+#define ICM42605_APEX_DATA2           0x33UL
+#define ICM42605_APEX_DATA3           0x34UL
+#define ICM42605_APEX_DATA4           0x35UL
+#define ICM42605_APEX_DATA5           0x36UL
+#define ICM42605_INT_STATUS2          0x37UL
+#define ICM42605_INT_STATUS3          0x38UL
+#define ICM42605_SIGNAL_PATH_RESET    0x4BUL
+#define ICM42605_INTF_CONFIG0         0x4CUL
+#define ICM42605_INTF_CONFIG1         0x4DUL
+#define ICM42605_PWR_MGMT0            0x4EUL
+#define ICM42605_GYRO_CONFIG0         0x4FUL
+#define ICM42605_ACCEL_CONFIG0        0x50UL
+#define ICM42605_GYRO_CONFIG1         0x51UL
+#define ICM42605_GYRO_ACCEL_CONFIG0   0x52UL
+#define ICM42605_ACCEL_CONFIG1        0x53UL
+#define ICM42605_TMST_CONFIG          0x54UL
+#define ICM42605_APEX_CONFIG0         0x56UL
+#define ICM42605_SMD_CONFIG           0x57UL
+#define ICM42605_FIFO_CONFIG1         0x5FUL
+#define ICM42605_FIFO_CONFIG2         0x60UL
+#define ICM42605_FIFO_CONFIG3         0x61UL
+#define ICM42605_FSYNC_CONFIG         0x62UL
+#define ICM42605_INT_CONFIG0          0x63UL
+#define ICM42605_INT_CONFIG1          0x64UL
+#define ICM42605_INT_SOURCE0          0x65UL
+#define ICM42605_INT_SOURCE1          0x66UL
+#define ICM42605_INT_SOURCE3          0x68UL
+#define ICM42605_INT_SOURCE4          0x69UL
+#define ICM42605_FIFO_LOST_PKT0       0x6CUL
+#define ICM42605_FIFO_LOST_PKT1       0x6DUL
+#define ICM42605_SELF_TEST_CONFIG     0x70UL
+#define ICM42605_WHO_AM_I             0x75UL
+#define ICM42605_REG_BANK_SEL         0x76UL
+
+// Bank 1
+#define ICM42605_SENSOR_CONFIG0       0x03UL
+#define ICM42605_GYRO_CONFIG_STATIC2  0x0BUL
+#define ICM42605_GYRO_CONFIG_STATIC3  0x0CUL
+#define ICM42605_GYRO_CONFIG_STATIC4  0x0DUL
+#define ICM42605_GYRO_CONFIG_STATIC5  0x0EUL
+#define ICM42605_GYRO_CONFIG_STATIC6  0x0FUL
+#define ICM42605_GYRO_CONFIG_STATIC7  0x10UL
+#define ICM42605_GYRO_CONFIG_STATIC8  0x11UL
+#define ICM42605_GYRO_CONFIG_STATIC9  0x12UL
+#define ICM42605_GYRO_CONFIG_STATIC10 0x13UL
+#define ICM42605_XG_ST_DATA           0x5FUL
+#define ICM42605_YG_ST_DATA           0x60UL
+#define ICM42605_ZG_ST_DATA           0x61UL
+#define ICM42605_TMSTVAL0             0x62UL
+#define ICM42605_TMSTVAL1             0x63UL
+#define ICM42605_TMSTVAL2             0x64UL
+#define ICM42605_INTF_CONFIG4         0x7AUL
+#define ICM42605_INTF_CONFIG5         0x7BUL
+#define ICM42605_INTF_CONFIG6         0x7CUL
+
+// Bank 2
+#define ICM42605_ACCEL_CONFIG_STATIC2 0x03UL
+#define ICM42605_ACCEL_CONFIG_STATIC3 0x04UL
+#define ICM42605_ACCEL_CONFIG_STATIC4 0x05UL
+#define ICM42605_XA_ST_DATA           0x3BUL
+#define ICM42605_YA_ST_DATA           0x3CUL
+#define ICM42605_ZA_ST_DATA           0x3DUL
+
+// Bank 4
+#define ICM42605_GYRO_ON_OFF_CONFIG   0x0EUL
+#define ICM42605_APEX_CONFIG1         0x40UL
+#define ICM42605_APEX_CONFIG2         0x41UL
+#define ICM42605_APEX_CONFIG3         0x42UL
+#define ICM42605_APEX_CONFIG4         0x43UL
+#define ICM42605_APEX_CONFIG5         0x44UL
+#define ICM42605_APEX_CONFIG6         0x45UL
+#define ICM42605_APEX_CONFIG7         0x46UL
+#define ICM42605_APEX_CONFIG8         0x47UL
+#define ICM42605_APEX_CONFIG9         0x48UL
+#define ICM42605_ACCEL_WOM_X_THR      0x4AUL
+#define ICM42605_ACCEL_WOM_Y_THR      0x4BUL
+#define ICM42605_ACCEL_WOM_Z_THR      0x4CUL
+#define ICM42605_INT_SOURCE6          0x4DUL
+#define ICM42605_INT_SOURCE7          0x4EUL
+#define ICM42605_INT_SOURCE8          0x4FUL
+#define ICM42605_INT_SOURCE9          0x50UL
+#define ICM42605_INT_SOURCE10         0x51UL
+#define ICM42605_OFFSET_USER0         0x77UL
+#define ICM42605_OFFSET_USER1         0x78UL
+#define ICM42605_OFFSET_USER2         0x79UL
+#define ICM42605_OFFSET_USER3         0x7AUL
+#define ICM42605_OFFSET_USER4         0x7BUL
+#define ICM42605_OFFSET_USER5         0x7CUL
+#define ICM42605_OFFSET_USER6         0x7DUL
+#define ICM42605_OFFSET_USER7         0x7EUL
+#define ICM42605_OFFSET_USER8         0x7FUL
+
+#define ICM42605_ADDRESS              0x69UL // When ADO = HIGH
+
+#define AFS_2G                        0x03UL
+#define AFS_4G                        0x02UL
+#define AFS_8G                        0x01UL
+#define AFS_16G                       0x00UL // Default
+
+#define GFS_2000DPS                   0x00UL // Default
+#define GFS_1000DPS                   0x01UL
+#define GFS_500DPS                    0x02UL
+#define GFS_250DPS                    0x03UL
+#define GFS_125DPS                    0x04UL
+#define GFS_62_5DPS                   0x05UL
+#define GFS_31_25DPS                  0x06UL
+#define GFS_15_125DPS                 0x07UL
+
+#define AODR_8000Hz                   0x03UL
+#define AODR_4000Hz                   0x04UL
+#define AODR_2000Hz                   0x05UL
+#define AODR_1000Hz                   0x06UL // Default
+#define AODR_200Hz                    0x07UL
+#define AODR_100Hz                    0x08UL
+#define AODR_50Hz                     0x09UL
+#define AODR_25Hz                     0x0AUL
+#define AODR_12_5Hz                   0x0BUL
+#define AODR_6_25Hz                   0x0CUL
+#define AODR_3_125Hz                  0x0DUL
+#define AODR_1_5625Hz                 0x0EUL
+#define AODR_500Hz                    0x0FUL
+
+#define GODR_8000Hz                   0x03UL
+#define GODR_4000Hz                   0x04UL
+#define GODR_2000Hz                   0x05UL
+#define GODR_1000Hz                   0x06UL // Default
+#define GODR_200Hz                    0x07UL
+#define GODR_100Hz                    0x08UL
+#define GODR_50Hz                     0x09UL
+#define GODR_25Hz                     0x0AUL
+#define GODR_12_5Hz                   0x0BUL
+#define GODR_500Hz                    0x0FUL
